@@ -1,8 +1,8 @@
 # Master student Energy Systems, Energy Generation, and Sustainability 
 
 ### Education 
-Energy Systems, Energy Gnerator, and Sustainability, MEng
-Mechanical Engineering, BSc
+– Energy Systems, Energy Gnerator, and Sustainability, MEng
+– Mechanical Engineering, BSc
 
 ### Work Experience
 Technician Engineer @Fractal Systems 
