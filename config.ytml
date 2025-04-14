@@ -27,3 +27,18 @@ author:
       url: "/assets/Asif_Resume.pdf"
 
 theme: minimal-mistakes-jekyll
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: /portfolio/
+  - title: "Projects"
+    url: /portfolio/projects/
+  - title: "Resume"
+    url: /assets/latestresume.pdf
+  - title: "Contact"
+    url: /portfolio/contact/
+
+# Enable site-wide search and dark mode toggle
+minimal_mistakes_skin: "dark"
+search: true
