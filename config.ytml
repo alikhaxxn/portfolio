@@ -1,8 +1,29 @@
-title: Asif Ali Zelab Gul
-email: alikhaxxn@gmail.com
-description: >-
-  Master’s Student in Energy Systems | Aspiring Energy Engineer & Researcher.
-baseurl: ""
+title: "Asif Ali Zelab Gul"
+description: "Energy Systems Engineer | Portfolio"
+baseurl: "/portfolio"
 url: "https://asifaligul.github.io"
-github_username: asifaligul
-theme: jekyll-theme-minimal
+repository: asifaligul/portfolio
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+author:
+  name: "Asif Ali Zelab Gul"
+  avatar: "/assets/images/Profilepic.png"
+  bio: "Master’s in Energy Systems | Aspiring Energy Engineer & Researcher"
+  location: "Chicago, IL"
+  links:
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:alikhaxxn@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/asif-ali-rit"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/asifaligul"
+    - label: "Resume (PDF)"
+      icon: "fas fa-file-pdf"
+      url: "/assets/Asif_Resume.pdf"
+
+theme: minimal-mistakes-jekyll
