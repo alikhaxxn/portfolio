@@ -24,11 +24,11 @@ author:
       url: "https://github.com/asifaligul"
     - label: "Resume (PDF)"
       icon: "fas fa-file-pdf"
-      url: "/assets/Asif_Resume.pdf"
+      url: "/assets/latestresume.pdf"
 
-theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dark"
+search: true
 
-# Navigation
 navigation:
   - title: "Home"
     url: /portfolio/
