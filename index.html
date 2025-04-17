@@ -6,14 +6,43 @@
   <title>Asif Ali Zelab Gul – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
       font-size: 17px;
       line-height: 1.8;
       margin: 0;
-      padding: 40px;
+      padding: 0;
       background: #f9f9f9;
       color: #333;
+    }
+    nav {
+      background: #001f3f;
+      color: white;
+      padding: 12px 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 25px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s ease;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    .section-title {
+      font-size: 1.5em;
+      color: #001f3f;
+      font-weight: 600;
+      margin: 40px 0 20px;
     }
     a {
       color: #0073e6;
@@ -24,7 +53,7 @@
       color: #0051a3;
     }
     h2 {
-      color: #001f3f; /* navy blue */
+      color: #001f3f;
       margin-bottom: 10px;
       font-size: 1.6em;
     }
@@ -42,6 +71,7 @@
       max-width: 1200px;
       width: 90%;
       margin: auto;
+      padding: 40px 0;
       gap: 40px;
     }
     .left-column {
@@ -98,7 +128,14 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="home" class="container">
     <!-- LEFT COLUMN -->
     <div class="left-column">
       <img src="Profilepic.png" alt="Asif Ali Zelab Gul">
@@ -115,6 +152,7 @@
     <div class="right-column">
       <p><strong>Technical Skills:</strong> Python, MATLAB, EES, ANSYS, SolidWorks, PID Control, Simulation, Energy Modeling</p>
 
+      <p class="section-title" id="experience">Experience</p>
       <ul>
         <li><strong>Illinois Institute of Technology</strong> – M.Eng. Energy Systems (2024–2026)</li>
         <li><strong>RIT Dubai</strong> – B.Sc. Mechanical Engineering (2019–2024)</li>
@@ -131,6 +169,8 @@
         <li>Created structural and equipment designs using AutoCAD and SolidWorks.</li>
         <li>Supported preparation of documentation and custom equipment solutions.</li>
       </ul>
+
+      <p class="section-title" id="projects">Projects</p>
 
       <div class="project">
         <h4>🔋 EV Battery Health Estimation</h4>
@@ -154,6 +194,7 @@
         <p>Implemented a custom PID control system in MATLAB to keep a Cadillac Lyriq centered in its lane based on path-following and steering feedback. Focused on real-time response, tracking accuracy, and tuning of gain parameters.</p>
       </div>
 
+      <p class="section-title" id="contact">Courses & Certifications</p>
       <ul>
         <li>Machine Learning for Engineers</li>
         <li>Renewable & Sustainable Energy</li>
@@ -168,8 +209,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
