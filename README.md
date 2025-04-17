@@ -1,21 +1,60 @@
-# Master student Energy Systems, Energy Generation, and Sustainability 
+# 🌐 Asif Ali Zelab Gul – Professional Portfolio
 
-### Education 
-– Energy Systems, Energy Gnerator, and Sustainability, MEng
-– Mechanical Engineering, BSc
+[![GitHub Pages](https://img.shields.io/badge/Live--Site-Visit-0073e6?style=for-the-badge&logo=github)](https://alikhaxxn.github.io/portfolio/)
+[![Made With](https://img.shields.io/badge/Built%20With-HTML%20%26%20CSS-orange?style=for-the-badge)](#)
+[![Profile](https://img.shields.io/badge/Role-Energy%20Engineer-blueviolet?style=for-the-badge)](#)
 
-### Work Experience
-Technician Engineer @Fractal Systems 
-– Engineered efficient and high-quality products, designs, and processes to meet client expectations.
-– Specialized in integrating MADRIX control software with LED systems to create dynamic lighting displays.
-– Assisted in designing, manufacturing, and programming an automated restroom prototype for DXB Airport with sensor-driven self-cleaning.
-– Manufactured, programmed, and assembled a 3D miniature layout of The Line project for a Saudi exhibition.
-– Designed and 3D-printed podiums and interactive lighting orbs for UAEU to guide guests and assign quests.
-– Assembling projects were carried out for Mohammad bin Rashid Library, Abu Dhabi exhibition, Egypt Pavilion for exhibition, Fractal Studio, DNA display, Moving Wings LED display, LED roof
+---
 
-CAD & SOLIDWORKS Designer @Kiran Ali Information Technology 
-– Utilized AutoCAD and other drafting software to develop detailed structural designs for various products, ensuring precision and adherence to project specifications.
-– Assisted in the preparation of comprehensive equipment summaries and data point schedules, providing critical support for project documentation and planning.
-– Collaborated with the engineering team in designing custom automated equipment using SolidWorks, contributing innovative solutions and technical expertise.
+## ✨ About Me
 
-### Projects 
+Hi, I’m **Asif Ali Zelab Gul**, a passionate Energy Systems Engineer and Master’s student at **Illinois Institute of Technology**. My work bridges mechanical engineering, automation, and sustainable energy solutions.
+
+I love building smart, responsive simulations — from EV battery diagnostics to geothermal plant modeling.
+
+---
+
+## 🚀 Live Portfolio
+
+📍 [**Click here to view the live site**](https://alikhaxxn.github.io/portfolio/)
+
+---
+
+## 🛠️ Technologies Used
+
+- ✅ **HTML5** / **CSS3**
+- ✅ Responsive Web Design
+- ✅ Lightweight JS for interactivity
+- ✅ GitHub Pages for deployment
+
+---
+
+## 📸 Screenshots
+
+### 💻 Desktop View  
+![Desktop View](assets/portfolio-desktop.png)
+
+### 📱 Mobile View  
+![Mobile View](assets/portfolio-mobile.png)
+
+---
+
+## 🔍 Features
+
+- 🎨 Fully responsive modern UI
+- 💡 Projects with descriptions and live images
+- 🧠 Technical skill tags
+- 🖼️ Certificate previews
+- 📬 Contact Me section
+- 🌙 Smooth scrolling, button hovers, and mobile polish
+
+---
+
+## 🔧 Local Development
+
+Want to run the project locally?
+
+```bash
+git clone https://github.com/alikhaxxn/portfolio.git
+cd portfolio
+open index.html  # or just drag it into your browser
