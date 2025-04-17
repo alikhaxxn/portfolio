@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Asif Ali Zelab Gul – Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <p style="margin-top: 10px; font-size: 0.95em; line-height: 1.6;">
-  Passionate about building data-driven and sustainable energy solutions. Experienced in geothermal modeling, EV battery analytics, and embedded system prototyping with a focus on optimization and innovation.
-</p>
-
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -28,7 +24,7 @@
       color: #0051a3;
     }
     h2 {
-      color: #2c3e50;
+      color: #38bdf8; /* sky blue */
       margin-bottom: 10px;
       font-size: 1.6em;
     }
@@ -72,6 +68,18 @@
     .right-column {
       flex: 1;
       min-width: 300px;
+    }
+    .project {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .project img {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 8px;
     }
     .button {
       display: inline-block;
@@ -133,12 +141,28 @@
       </ul>
 
       <h3>Projects</h3>
-      <ul>
-        <li><strong>Binary Cycle Geothermal Power Plant Optimization:</strong> Modeled and optimized a geothermal plant using EES, focused on working fluid, depth variation, and Quaise tech.</li>
-        <li><strong>EV Battery Health Estimation:</strong> Python model estimating EV battery degradation through simulation and drive cycle data.</li>
-        <li><strong>Thermoelectric Energy Harvesting:</strong> Designed and simulated thermoelectric energy conversion using EES.</li>
-        <li><strong>Autonomous Lane-Centering Control:</strong> Implemented PID control in Cadillac Lyriq for lane-following logic using path feedback.</li>
-      </ul>
+
+      <div class="project">
+        <h4>🔋 EV Battery Health Estimation</h4>
+        <p>Developed a Python-based framework to estimate battery degradation trends based on real-world drive cycle data. Utilized data visualization, time series analysis, and simulation tools to forecast useful battery life.</p>
+        <img src="prius-efficiency.png" alt="EV Battery Health Estimation Visualization">
+      </div>
+
+      <div class="project">
+        <h4>🌋 Binary Cycle Geothermal Power Plant Optimization</h4>
+        <p>Modeled and optimized a supercritical binary cycle geothermal plant using Engineering Equation Solver (EES). Focused on well depth analysis, fluid selection, and efficiency mapping using Quaise Energy's laser drilling capabilities.</p>
+        <img src="geothermal-cycle.jpg" alt="Geothermal Binary Cycle Model">
+      </div>
+
+      <div class="project">
+        <h4>🔥 Thermoelectric Energy Harvesting</h4>
+        <p>Simulated a thermoelectric generator module using EES to harvest energy from temperature gradients. Investigated material properties, thermal losses, and output power generation through parametric analysis.</p>
+      </div>
+
+      <div class="project">
+        <h4>🚗 Autonomous Lane-Centering Control</h4>
+        <p>Implemented a custom PID control system in MATLAB to keep a Cadillac Lyriq centered in its lane based on path-following and steering feedback. Focused on real-time response, tracking accuracy, and tuning of gain parameters.</p>
+      </div>
 
       <h3>Courses & Certifications</h3>
       <ul>
@@ -155,5 +179,6 @@
   </footer>
 </body>
 </html>
+
 
 
