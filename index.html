@@ -202,38 +202,53 @@
         <li>Created CAD/SolidWorks designs for equipment solutions.</li>
         <li>Supported documentation and prototype testing.</li>
       </ul>
-      <div class="project">
-  <h4>🔋 EV & PHEV Energy Analysis – Prius & Volt</h4>
+  <div class="project">
+  <h4>🚗 HEV Efficiency Analysis – 2010 Toyota Prius (UDDS & HWFET)</h4>
   <p>
-    A drive-cycle simulation of a 2010 Toyota Prius and a 2016 Chevy Volt, analyzing energy use,
-    battery behavior, and powertrain efficiency under UDDS and HWFET test cycles using real-world data.
+    This study analyzes the hybrid energy usage of a 2010 Toyota Prius under standardized UDDS and HWFET driving cycles.
+    MATLAB-based simulation processes fuel economy, battery flow, and regenerative braking behavior.
   </p>
+    
+  <img src="Batteryudds.png" alt="Battery Power vs MPH - UDDS">
+  <p><em>Battery power output and regenerative events mapped to vehicle speed. Notable regen peaks visible during decelerations.</em></p>
 
- 
-<div class="project">
-  <h4>🔋 EV & PHEV Energy Analysis – Prius & Volt</h4>
-  <p>
-    A complete drive-cycle simulation and energy performance analysis of a 2010 Toyota Prius (HEV) and a 2016 Chevy Volt (PHEV). 
-    This project used MATLAB and real-world UDDS & HWFET data to extract battery performance, regenerative braking, and energy consumption insights.
-  </p>
-  
-   <img src="SOCvsTime.png" alt="SOC and Speed over Time (Chevrolet Volt)">
-  <p><em>SOC drops over time during the Charge-Depleting (CD) mode — confirming EV-first operation.</em></p>
+  <img src="Result.png" alt="MATLAB Output Summary - UDDS & HWFET">
+  <p><em>MATLAB terminal output with corrected MPG, NEC, and overall powertrain efficiency.</em></p>
 
-  <img src="Batteryudds.png" alt="Battery Power and Speed over Time">
-  <p><em>Battery assist (positive) and regeneration (negative) plotted with vehicle speed across the UDDS cycle.</em></p>
-
-  <img src="Result.png" alt="MATLAB Output Summary">
-  <p><em>Key performance metrics such as corrected MPG, Wh/mi, and Rcda detection for both drive cycles.</em></p>
   <ul>
-    <li>✅ SOC-corrected MPG: Up to 83 mpg (HWFET)</li>
-    <li>⚡ Energy Use: Prius ~160 Wh/mi (HWFET), Volt CD mode ~350 Wh/mi</li>
-    <li>🔄 PHEV classification: Volt confirmed as Blended PHEV via Rcda analysis</li>
-    <li>📉 Rcda detection based on power delivery threshold: ~12kW</li>
+    <li>✅ SOC-Corrected MPG: 70.59 (UDDS), 64.21 (HWFET)</li>
+    <li>🔋 NEC: −14.75 Wh/mi (UDDS), −12.99 Wh/mi (HWFET)</li>
+    <li>⚙️ Efficiency: 16.27% – 25.07%</li>
+    <li>🧠 Engine starts assisting near: 10.27 kW</li>
   </ul>
 
-  <p><strong>Tools used:</strong> MATLAB, Argonne D3 data, EV powertrain modeling</p>
+  <p><strong>Tools:</strong> MATLAB, UDDS & HWFET data cycles</p>
 </div>
+
+ <div class="project">
+  <h4>⚡ PHEV CD/CS Operation Study – 2016 Chevrolet Volt</h4>
+  <p>
+    This project evaluates the transition behavior and fuel-electric blend characteristics of a 2016 Chevrolet Volt using Argonne's D3 test datasets.
+    Both Charge Depleting (CD) and Charge Sustaining (CS) phases are analyzed to classify the Volt's hybrid strategy.
+  </p>
+
+  <img src="SOCvsTime.png" alt="SOC vs Speed - CD Mode">
+  <p><em>SOC consistently drops during CD operation across multiple cycles — confirms EV-first energy use.</em></p>
+   
+  <img src="RPM.png" alt="RPM, Battery Voltage, Battery Current Vs Time">
+  <p><em>This plot confirms the engine was ON intermittently during CD mode and was contributing to both propulsion and battery charging, confirming this PHEV behaves as a Blended .</em></p>
+
+
+  <ul>
+    <li>📉 Rcda analysis confirmed blended PHEV behavior</li>
+    <li>🔋 Final CD SOC drop to 17%, CS plateau after transition</li>
+    <li>📍 Transition point identified: ~5467 sec</li>
+    <li>📊 Volt exhibits both series and parallel hybrid traits</li>
+  </ul>
+
+  <p><strong>Tools:</strong> MATLAB, Argonne D3 Cycle Data (CD & CS)</p>
+</div>
+
 
       <div class="project">
         <h4>🧹 Beach Cleaning Robot <span style="float:right">JAN 2022 – AUG 2022</span></h4>
