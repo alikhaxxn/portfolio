@@ -90,6 +90,25 @@
     .left-column img:hover {
       transform: scale(1.05);
     }
+    .left-column p, .left-column a {
+      font-size: 0.9em;
+      display: block;
+      margin: 6px 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      background: #0073e6;
+      color: white;
+      border-radius: 6px;
+      font-size: 0.95em;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #005bb5;
+    }
     .right-column {
       flex: 1;
       min-width: 300px;
@@ -105,20 +124,6 @@
       max-width: 100%;
       margin-top: 15px;
       border-radius: 8px;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 18px;
-      background: #0073e6;
-      color: white;
-      border-radius: 6px;
-      font-size: 1em;
-      font-weight: 500;
-      transition: background 0.3s ease;
-    }
-    .button:hover {
-      background: #005bb5;
     }
     footer {
       text-align: center;
@@ -141,25 +146,18 @@
     <div class="left-column">
       <img src="Profilepic.png" alt="Asif Ali Zelab Gul">
       <h2>Asif Ali Zelab Gul</h2>
-      <p>Energy Systems Engineer</p>
-      <p><a href="mailto:aali78@iit.edu">aali78@iit.edu</a></p>
-      <p>+1-872-325-6546</p>
-      <p>Chicago, IL</p>
+      <p><em>Energy Systems Engineer</em></p>
+      <p><a href="mailto:aali78@iit.edu">📧 aali78@iit.edu</a></p>
+      <p>📞 +1-872-325-6546</p>
+      <p>📍 Chicago, IL</p>
       <p><a href="https://linkedin.com/in/asif-ali-rit">LinkedIn</a> | <a href="https://github.com/asifaligul">GitHub</a></p>
-      <a href="latestresume.pdf" class="button">Download Resume</a>
+      <a href="latestresume.pdf" class="button">📄 Resume</a>
     </div>
 
     <!-- RIGHT COLUMN -->
     <div class="right-column">
       <p class="section-title">About Me</p>
       <p>I’m a passionate and hands-on energy engineer currently pursuing my Master’s in Energy Systems at Illinois Institute of Technology. With a background in mechanical engineering, I specialize in geothermal design, EV battery diagnostics, and intelligent system automation. My focus is on blending sustainability with simulation and data modeling to engineer efficient solutions for the future.</p>
-
-      <p><strong>Technical Skills:</strong> Python, MATLAB, EES, ANSYS, SolidWorks, PID Control, Simulation, Energy Modeling</p>
-      <ul>
-        <li><strong>Designing Software:</strong> AutoCAD, ANSYS, SolidWorks, AutoDesk Inventor, GT-SUITE</li>
-        <li><strong>Programming:</strong> MATLAB, C++, Python, Engineering Equation Solver (EES)</li>
-        <li><strong>Other:</strong> MS Excel, Machinery, Manufacturing, Problem Solving, Project Management, Process Improvement, Multilingual</li>
-      </ul>
 
       <p class="section-title" id="experience">Experience</p>
       <ul>
@@ -219,8 +217,10 @@
         </ul>
       </div>
 
-      <p class="section-title" id="contact">Courses & Certifications</p>
+      <p class="section-title" id="contact">Certifications</p>
       <ul>
+        <li><strong>Driveline Dynamics in xEVs</strong> – Completed April 2025</li>
+        <li><strong>Introduction to GT-SUITE</strong> – Completed March 2025</li>
         <li>Machine Learning for Engineers</li>
         <li>Renewable & Sustainable Energy</li>
         <li>Design of Thermal Systems</li>
