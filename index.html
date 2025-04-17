@@ -113,31 +113,43 @@
       flex: 1;
       min-width: 300px;
     }
-    .project {
+    .project, .certification, .contact-section {
       background: #ffffff;
       padding: 20px;
       margin-bottom: 25px;
       border-radius: 10px;
       box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover, .certification:hover {
+      transform: scale(1.01);
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
     .project img, .certification img {
-      max-width: 100%;
+      max-width: 70%;
       margin-top: 15px;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+      cursor: pointer;
+      transition: transform 0.3s ease;
     }
-    .certification {
-      background: #ffffff;
-      padding: 20px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    .project img:hover, .certification img:hover {
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
       font-size: 0.95em;
       color: gray;
       margin-top: 60px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .left-column, .right-column {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -150,7 +162,6 @@
   </nav>
 
   <div id="home" class="container">
-    <!-- LEFT COLUMN -->
     <div class="left-column">
       <img src="Profilepic.png" alt="Asif Ali Zelab Gul">
       <h2>Asif Ali Zelab Gul</h2>
@@ -162,90 +173,82 @@
       <a href="latestresume.pdf" class="button">📄 Resume</a>
     </div>
 
-    <!-- RIGHT COLUMN -->
     <div class="right-column">
       <p class="section-title">About Me</p>
-      <p>I’m a passionate and hands-on energy engineer currently pursuing my Master’s in Energy Systems at Illinois Institute of Technology. With a background in mechanical engineering, I specialize in geothermal design, EV battery diagnostics, and intelligent system automation. My focus is on blending sustainability with simulation and data modeling to engineer efficient solutions for the future.</p>
+      <p>I’m a passionate and hands-on energy engineer currently pursuing my Master’s in Energy Systems at Illinois Institute of Technology. With a background in mechanical engineering, I specialize in geothermal design, EV battery diagnostics, and intelligent system automation.</p>
 
       <p class="section-title">Skills</p>
       <ul>
         <li><strong>Designing Software:</strong> AutoCAD, ANSYS, SolidWorks, AutoDesk Inventor, GT-SUITE</li>
-        <li><strong>Programming:</strong> MATLAB, C++, Python, Engineering Equation Solver (EES)</li>
-        <li><strong>Other:</strong> MS Excel, Machinery, Manufacturing, Problem Solving, Project Management, Process Improvement, Multilingual</li>
+        <li><strong>Programming:</strong> MATLAB, C++, Python, EES</li>
+        <li><strong>Other:</strong> Excel, Project Management, Manufacturing, Multilingual</li>
       </ul>
 
       <p class="section-title" id="education">Education</p>
-  <ul>
-    <li><strong>Illinois Institute of Technology</strong> – M.Eng. Energy Systems (2024–2026)</li>
-    <li><strong>RIT Dubai</strong> – B.Sc. Mechanical Engineering (2019–2024)</li>
-  </ul>
+      <ul>
+        <li><strong>Illinois Institute of Technology</strong> – M.Eng. Energy Systems (2024–2026)</li>
+        <li><strong>RIT Dubai</strong> – B.Sc. Mechanical Engineering (2019–2024)</li>
+      </ul>
 
-       <p class="section-title" id="experience">Work Experience</p>
-  <p><strong>Technician Engineer @ Fractal Systems</strong> (2022–2023)</p>
-  <ul>
-    <li>Designed automated systems and LED-integrated displays using MADRIX and Arduino.</li>
-    <li>Worked on smart restroom automation for DXB Airport and a 3D model for "The Line" project.</li>
-    <li>Installed custom lighting systems for exhibitions and libraries across the UAE.</li>
-  </ul>
-  <p><strong>CAD Designer @ Kiran Ali IT</strong> (2021–2022)</p>
-  <ul>
-    <li>Created structural and equipment designs using AutoCAD and SolidWorks.</li>
-    <li>Supported preparation of documentation and custom equipment solutions.</li>
-  </ul>
-      
+      <p class="section-title" id="experience">Work Experience</p>
+      <p><strong>Technician Engineer @ Fractal Systems</strong> (2022–2023)</p>
+      <ul>
+        <li>Designed LED-integrated displays using MADRIX and Arduino.</li>
+        <li>Developed automation systems for Dubai Airport and “The Line” project.</li>
+        <li>Installed lighting systems for major exhibitions across the UAE.</li>
+      </ul>
+      <p><strong>CAD Designer @ Kiran Ali IT</strong> (2021–2022)</p>
+      <ul>
+        <li>Created CAD/SolidWorks designs for equipment solutions.</li>
+        <li>Supported documentation and prototype testing.</li>
+      </ul>
+
       <p class="section-title" id="projects">Projects</p>
-
       <div class="project">
         <h4>🔋 EV Battery Health Estimation</h4>
-        <p>Developed a Python-based framework to estimate battery degradation trends based on real-world drive cycle data. Utilized data visualization, time series analysis, and simulation tools to forecast useful battery life.</p>
-        <img src="prius-efficiency.png" alt="EV Battery Health Estimation Visualization">
+        <p>Developed Python-based models to simulate EV battery degradation trends using real drive cycle data.</p>
+        <img src="prius-efficiency.png" alt="EV Battery Project">
       </div>
-
       <div class="project">
-        <h4>🌋 Binary Cycle Geothermal Power Plant Optimization</h4>
-        <p>Modeled and optimized a supercritical binary cycle geothermal plant using Engineering Equation Solver (EES). Focused on well depth analysis, fluid selection, and efficiency mapping using Quaise Energy's laser drilling capabilities.</p>
-        <img src="geothermal-cycle.jpg" alt="Geothermal Binary Cycle Model">
-      </div>
-
-      <div class="project">
-        <h4>🔥 Thermoelectric Energy Harvesting</h4>
-        <p>Simulated a thermoelectric generator module using EES to harvest energy from temperature gradients. Investigated material properties, thermal losses, and output power generation through parametric analysis.</p>
-      </div>
-
-      <div class="project">
-        <h4>🚗 Autonomous Lane-Centering Control</h4>
-        <p>Implemented a custom PID control system in MATLAB to keep a Cadillac Lyriq centered in its lane based on path-following and steering feedback. Focused on real-time response, tracking accuracy, and tuning of gain parameters.</p>
+        <h4>🌋 Binary Cycle Geothermal Optimization</h4>
+        <p>Modeled a binary cycle geothermal plant in EES using Quaise Energy's laser drilling data for optimization.</p>
+        <img src="geothermal-cycle.jpg" alt="Geothermal Project">
       </div>
 
       <div class="project">
         <h4>🧹 Beach Cleaning Robot <span style="float:right">JAN 2022 – AUG 2022</span></h4>
         <ul>
-          <li>Developed an autonomous beach-cleaning robot using recycled materials to combat pollution, driven by sustainability goals.</li>
-          <li>Designed path-planning MATLAB code to avoid obstacles using a potential field method.</li>
+          <li>Built a recycled-material robot to autonomously clean beaches.</li>
+          <li>Used potential field method for path planning in MATLAB.</li>
         </ul>
       </div>
-
       <div class="project">
         <h4>💧 Desalination by Thermosyphon <span style="float:right">JUL 2023 – MAY 2024</span></h4>
         <ul>
-          <li>Designed and prototyped a standalone solar-powered desalination unit to address water scarcity in arid regions.</li>
-          <li>Focused on thermodynamic efficiency, sustainable material selection, and low-cost implementation.</li>
+          <li>Prototyped solar-powered water desalination system.</li>
+          <li>Focused on thermal efficiency and sustainable implementation.</li>
         </ul>
       </div>
 
-    
-    
-<div class="certification">
-  <h4>📘 Driveline Dynamics in xEVs</h4>
-  <p>Completed April 2025</p>
-  <img src="Driveline dynamics in xEVs.png" alt="Driveline Dynamics Certificate">
-</div>
+      <p class="section-title">Certifications</p>
+      <div class="certification">
+        <h4>📘 Driveline Dynamics in xEVs</h4>
+        <p>Completed April 2025</p>
+        <img src="Driveline dynamics in xEVs.png" alt="Driveline Dynamics Certificate">
+      </div>
+      <div class="certification">
+        <h4>📗 Introduction to GT-SUITE</h4>
+        <p>Completed March 2025</p>
+        <img src="Introduction to GT SUITE.png" alt="GT-SUITE Certificate">
+      </div>
 
-<div class="certification">
-  <h4>📗 Introduction to GT-SUITE</h4>
-  <p>Completed March 2025</p>
-  <img src="Introduction to GT SUITE.png" alt="GT-SUITE Certificate">
-</div>
+      <div class="contact-section">
+        <h4>📬 Let’s Connect</h4>
+        <p>Looking for collaboration or roles in energy systems, automation, or sustainability projects. I’m always open to talk!</p>
+        <a href="mailto:aali78@iit.edu" class="button">Contact Me</a>
+      </div>
+    </div>
+  </div>
 
   <footer>
     © 2025 Asif Ali Zelab Gul • Built with ❤️ and HTML/CSS on GitHub Pages
