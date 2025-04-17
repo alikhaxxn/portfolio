@@ -25,13 +25,17 @@
     }
     .container {
       display: flex;
-      max-width: 1000px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      width: 90%;
       margin: auto;
+      gap: 40px;
     }
     .left-column {
-      width: 30%;
-      padding-right: 40px;
+      width: 100%;
+      max-width: 300px;
       text-align: center;
+      flex-shrink: 0;
     }
     .left-column img {
       width: 140px;
@@ -39,7 +43,8 @@
       margin-bottom: 20px;
     }
     .right-column {
-      width: 70%;
+      flex: 1;
+      min-width: 300px;
     }
     .button {
       display: inline-block;
@@ -117,3 +122,4 @@
   </footer>
 </body>
 </html>
+
