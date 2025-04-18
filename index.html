@@ -80,16 +80,14 @@
       text-align: center;
       flex-shrink: 0;
     }
-    .left-column img {
-      width: 210px;
-      height: 210px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      transition: transform 0.3s ease;
-    }
-    .left-column img:hover {
-      transform: scale(1.05);
-    }
+.left-column img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  object-fit: cover; 
+}
     .left-column p, .left-column a {
       font-size: 0.9em;
       display: block;
@@ -113,17 +111,6 @@
       flex: 1;
       min-width: 300px;
     }
-    /* Profile Picture */
-.left-column img {
-  width: 210px;
-  height: 210px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  object-fit: cover; /* keeps it clean circle */
-}
-
-/* PNG Images (Project Plots) */
 img[src$=".png"] {
   width: 100%;
   max-width: 600px;
@@ -135,12 +122,10 @@ img[src$=".png"] {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-
-/* JPG Images (Make Them Smaller) */
 img[src$=".jpg"],
 img[src$=".jpeg"] {
   width: 100%;
-  max-width: 400px; /* smaller than PNG */
+  max-width: 400px; 
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
