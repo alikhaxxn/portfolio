@@ -80,15 +80,6 @@
       text-align: center;
       flex-shrink: 0;
     }
-.left-column img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
     .left-column p, .left-column a {
       font-size: 0.9em;
       display: block;
@@ -112,50 +103,38 @@
       flex: 1;
       min-width: 300px;
     }
-img[src$=".png"] {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-img[src$=".jpg"],
-img[src$=".jpeg"] {
-  width: 100%;
-  max-width: 400px; 
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-   img[src$=".png"] {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
+    img[src$=".png"] {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img[src$=".jpg"],
+    img[src$=".jpeg"] {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
   </style>
-  .profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 </head>
 <body>
   <nav>
@@ -165,9 +144,9 @@ img[src$=".jpeg"] {
     <a href="#contact">Contact</a>
   </nav>
 
-  <div id="home" class="container">
+<div id="home" class="container">
     <div class="left-column">
-      <img class="profile-pic" src="Profilepic.png" alt="Asif Ali Zelab Gul">
+      <img src="Profilepic.png" alt="Asif Ali Zelab Gul">
       <h2>Asif Ali Zelab Gul</h2>
       <p><em>Energy Systems Engineer</em></p>
       <p><a href="mailto:aali78@iit.edu">📧 aali78@iit.edu</a></p>
@@ -277,7 +256,7 @@ img[src$=".jpeg"] {
     Developed a sustainable, solar-powered desalination unit based on thermosyphon technology. This passive design uses natural convection and phase change to separate freshwater from brine, targeting water scarcity in arid regions.
   </p>
 
-  <img src="posterofproject.jpg" alt="Desalination Project Poster" style="max-width: 80%; border-radius: 10px;">
+  <img src="posterofproject.jpg" alt="Desalination Project Poster" style="max-width: 100%; border-radius: 10px;">
   <p><em>Poster presentation summarizing methodology, design, experiments, and conclusions for the thermosyphon-based desalination system.</em></p>
  <img src="presentation.jpg" alt="Capstone Presentation to Judges">
   <p><em>Presenting the project to our judging committee. Our team placed <strong>2nd</strong> at RIT Dubai for Best Final Year Engineering Project.</em></p>
