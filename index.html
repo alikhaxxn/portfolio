@@ -80,6 +80,15 @@
       text-align: center;
       flex-shrink: 0;
     }
+    .left-column img {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
     .left-column p, .left-column a {
       font-size: 0.9em;
       display: block;
@@ -103,16 +112,6 @@
       flex: 1;
       min-width: 300px;
     }
-     .Profilepic {
-  width: 200px;
-  height: 200px;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-  display: block;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
     img[src$=".png"] {
       width: 100%;
       max-width: 600px;
@@ -127,13 +126,36 @@
     img[src$=".jpg"],
     img[src$=".jpeg"] {
       width: 100%;
-      max-width: 400px;
+      max-width: 400px; 
       height: auto;
       display: block;
       margin: 0 auto 10px auto;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
+    }
+    .project-list, .certification-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .project-item, .certification-item {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    .project-item:last-child, .certification-item:last-child {
+      border-bottom: none;
+    }
+    .project-item ul, .certification-item ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    .project-item ul ul {
+      list-style-type: circle;
+    }
+    .project-item h4, .certification-item h4 {
+      margin-bottom: 10px;
+      color: #001f3f;
     }
   </style>
 </head>
@@ -145,7 +167,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
-<div id="home" class="container">
+  <div id="home" class="container">
     <div class="left-column">
       <img src="Profilepic.png" alt="Asif Ali Zelab Gul">
       <h2>Asif Ali Zelab Gul</h2>
@@ -158,16 +180,16 @@
     </div>
 
     <div class="right-column">
-<p class="section-title">About Me</p>
-<p>
-  I'm Asif Ali Zelab Gul, a driven Energy Systems Engineer with a passion for building sustainable, data-driven solutions. Currently pursuing my Master’s in Energy Systems at Illinois Institute of Technology, I bring a hands-on background in mechanical engineering and a strong focus on renewable energy technologies, EV diagnostics, and intelligent automation.
-</p>
-<p>
-  My work spans from geothermal power plant modeling and thermosyphon desalination systems to hybrid vehicle efficiency analysis using real-world data. I thrive at the intersection of engineering design and simulation, with proficiency in tools like MATLAB, SolidWorks, EES, and ANSYS. Whether it's optimizing battery performance or designing automation for real-world infrastructure, I enjoy solving complex problems that have real impact.
-</p>
-<p>
-  I’m currently seeking research collaborations, internships, or full-time roles where I can apply my technical background and innovative mindset to contribute toward a sustainable energy future.
-</p>
+      <p class="section-title">About Me</p>
+      <p>
+        I'm Asif Ali Zelab Gul, a driven Energy Systems Engineer with a passion for building sustainable, data-driven solutions. Currently pursuing my Master's in Energy Systems at Illinois Institute of Technology, I bring a hands-on background in mechanical engineering and a strong focus on renewable energy technologies, EV diagnostics, and intelligent automation.
+      </p>
+      <p>
+        My work spans from geothermal power plant modeling and thermosyphon desalination systems to hybrid vehicle efficiency analysis using real-world data. I thrive at the intersection of engineering design and simulation, with proficiency in tools like MATLAB, SolidWorks, EES, and ANSYS. Whether it's optimizing battery performance or designing automation for real-world infrastructure, I enjoy solving complex problems that have real impact.
+      </p>
+      <p>
+        I'm currently seeking research collaborations, internships, or full-time roles where I can apply my technical background and innovative mindset to contribute toward a sustainable energy future.
+      </p>
 
       <p class="section-title">Skills</p>
       <ul>
@@ -186,7 +208,7 @@
       <p><strong>Technician Engineer @ Fractal Systems</strong> (2022–2023)</p>
       <ul>
         <li>Designed LED-integrated displays using MADRIX and Arduino.</li>
-        <li>Developed automation systems for Dubai Airport and “The Line” project.</li>
+        <li>Developed automation systems for Dubai Airport and "The Line" project.</li>
         <li>Installed lighting systems for major exhibitions across the UAE.</li>
       </ul>
       <p><strong>CAD Designer @ Kiran Ali IT</strong> (2021–2022)</p>
@@ -194,100 +216,95 @@
         <li>Created CAD/SolidWorks designs for equipment solutions.</li>
         <li>Supported documentation and prototype testing.</li>
       </ul>
-       <p class="section-title" id="Projects">Projects</p>
-      <ul>
-  <div class="project">
-  <h4> HEV Efficiency Analysis – 2010 Toyota Prius (UDDS & HWFET)</h4>
-  <p>
-    This study analyzes the hybrid energy usage of a 2010 Toyota Prius under standardized UDDS and HWFET driving cycles.
-    MATLAB-based simulation processes fuel economy, battery flow, and regenerative braking behavior.
-  </p>
-    
-  <img src="Batteryudds.png" alt="Battery Power vs MPH - UDDS">
-  <p><em>Battery power output and regenerative events mapped to vehicle speed. Notable regen peaks visible during decelerations.</em></p>
 
-  <img src="Result.png" alt="MATLAB Output Summary - UDDS & HWFET">
-  <p><em>MATLAB terminal output with corrected MPG, NEC, and overall powertrain efficiency.</em></p>
+      <p class="section-title" id="projects">Projects</p>
+      <ul class="project-list">
+        <li class="project-item">
+          <h4>HEV Efficiency Analysis – 2010 Toyota Prius (UDDS & HWFET)</h4>
+          <ul>
+            <li>Analyzed hybrid energy usage of 2010 Toyota Prius under standardized driving cycles</li>
+            <li>MATLAB-based simulation of fuel economy, battery flow, and regenerative braking</li>
+            <li>Key findings:
+              <ul>
+                <li>✅ SOC-Corrected MPG: 70.59 (UDDS), 64.21 (HWFET)</li>
+                <li>🔋 NEC: −14.75 Wh/mi (UDDS), −12.99 Wh/mi (HWFET)</li>
+                <li>⚙ Efficiency: 16.27% – 25.07%</li>
+              </ul>
+            </li>
+            <li><strong>Tools:</strong> MATLAB, UDDS & HWFET data cycles</li>
+          </ul>
+          <img src="Batteryudds.png" alt="Battery Power vs MPH - UDDS">
+          <p><em>Battery power output and regenerative events mapped to vehicle speed. Notable regen peaks visible during decelerations.</em></p>
+          <img src="Result.png" alt="MATLAB Output Summary - UDDS & HWFET">
+        </li>
 
-  <ul>
-    <li>✅ SOC-Corrected MPG: 70.59 (UDDS), 64.21 (HWFET)</li>
-    <li>🔋 NEC: −14.75 Wh/mi (UDDS), −12.99 Wh/mi (HWFET)</li>
-    <li>⚙ Efficiency: 16.27% – 25.07%</li>
-    <li>🧠 Engine starts assisting near: 10.27 kW</li>
-  </ul>
+        <li class="project-item">
+          <h4>PHEV CD/CS Operation Study – 2016 Chevrolet Volt</h4>
+          <ul>
+            <li>Evaluated transition behavior and fuel-electric blend characteristics</li>
+            <li>Analyzed both Charge Depleting (CD) and Charge Sustaining (CS) phases</li>
+            <li>Key findings:
+              <ul>
+                <li>📉 Confirmed blended PHEV behavior</li>
+                <li>🔋 Final CD SOC drop to 17%, CS plateau after transition</li>
+                <li>📍 Transition point identified: ~5467 sec</li>
+              </ul>
+            </li>
+            <li><strong>Tools:</strong> MATLAB, Argonne D3 Cycle Data</li>
+          </ul>
+          <img src="SOCvsTime.png" alt="SOC vs Speed - CD Mode">
+          <img src="RPM.png" alt="RPM, Battery Voltage, Battery Current Vs Time">
+        </li>
 
-  <p><strong>Tools:</strong> MATLAB, UDDS & HWFET data cycles</p>
-</div>
+        <li class="project-item">
+          <h4>Beach Cleaning Robot</h4>
+          <ul>
+            <li>Built autonomous beach cleaning robot using recycled materials</li>
+            <li>Implemented potential field method for path planning in MATLAB</li>
+            <li>Designed for efficient debris collection in coastal environments</li>
+          </ul>
+        </li>
 
- <div class="project">
-  <h4>⚡ PHEV CD/CS Operation Study – 2016 Chevrolet Volt</h4>
-  <p>
-    This project evaluates the transition behavior and fuel-electric blend characteristics of a 2016 Chevrolet Volt using Argonne's D3 test datasets.
-    Both Charge Depleting (CD) and Charge Sustaining (CS) phases are analyzed to classify the Volt's hybrid strategy.
-  </p>
-
-  <img src="SOCvsTime.png" alt="SOC vs Speed - CD Mode">
-  <p><em>SOC consistently drops during CD operation across multiple cycles — confirms EV-first energy use.</em></p>
-   
-  <img src="RPM.png" alt="RPM, Battery Voltage, Battery Current Vs Time">
-  <p><em>This plot confirms the engine was ON intermittently during CD mode and was contributing to both propulsion and battery charging, confirming this PHEV behaves as a Blended .</em></p>
-
-
-  <ul>
-    <li>📉 Rcda analysis confirmed blended PHEV behavior</li>
-    <li>🔋 Final CD SOC drop to 17%, CS plateau after transition</li>
-    <li>📍 Transition point identified: ~5467 sec</li>
-    <li>📊 Volt exhibits both series and parallel hybrid traits</li>
-  </ul>
-
-  <p><strong>Tools:</strong> MATLAB, Argonne D3 Cycle Data (CD & CS)</p>
-</div>
-
-
-      <div class="project">
-        <h4>🧹 Beach Cleaning Robot <span style="float:right">JAN 2022 – AUG 2022</span></h4>
-        <ul>
-          <li>Built a recycled-material robot to autonomously clean beaches.</li>
-          <li>Used potential field method for path planning in MATLAB.</li>
-        </ul>
-      </div>
-      <div class="project">
-  <h4>💧 Desalination by Thermosyphon <span style="float:right">JUL 2023 – MAY 2024</span></h4>
-  <p>
-    Developed a sustainable, solar-powered desalination unit based on thermosyphon technology. This passive design uses natural convection and phase change to separate freshwater from brine, targeting water scarcity in arid regions.
-  </p>
-
-  <img src="posterofproject.jpg" alt="Desalination Project Poster" style="max-width: 100%; border-radius: 10px;">
-  <p><em>Poster presentation summarizing methodology, design, experiments, and conclusions for the thermosyphon-based desalination system.</em></p>
- <img src="presentation.jpg" alt="Capstone Presentation to Judges">
-  <p><em>Presenting the project to our judging committee. Our team placed <strong>2nd</strong> at RIT Dubai for Best Final Year Engineering Project.</em></p>
-  <ul>
-    <li>🌞 Powered solely by solar energy; completely passive setup with no external pumps or controllers.</li>
-    <li>🧪 Experiments conducted at varying tilt angles, heights, and heat source intensities.</li>
-    <li>📈 Demonstrated consistent freshwater yield with increased thermodynamic efficiency.</li>
-    <li>🌍 Environmentally friendly solution aimed at solving global water challenges.</li>
-  </ul>
-
-  <p><strong>Tools & Concepts:</strong> Thermosyphon theory, heat pipe dynamics, energy balance modeling, solar collector efficiency</p>
-</div>
+        <li class="project-item">
+          <h4>Desalination by Thermosyphon</h4>
+          <ul>
+            <li>Developed solar-powered desalination unit using thermosyphon technology</li>
+            <li>Passive design using natural convection and phase change</li>
+            <li>Achieved consistent freshwater yield with increased efficiency</li>
+            <li><strong>Result:</strong> 2nd place at RIT Dubai for Best Final Year Engineering Project</li>
+          </ul>
+          <img src="posterofproject.jpg" alt="Desalination Project Poster">
+          <img src="presentation.jpg" alt="Capstone Presentation to Judges">
+        </li>
+      </ul>
 
       <p class="section-title">Certifications</p>
-      <div class="certification">
-        <h4>📘 Driveline Dynamics in xEVs</h4>
-        <p>Completed April 2025</p>
-        <img src="Driveline dynamics in xEVs.png" alt="Driveline Dynamics Certificate">
-      </div>
-      <div class="certification">
-        <h4>📗 Introduction to GT-SUITE</h4>
-        <p>Completed March 2025</p>
-        <img src="Introduction to GT SUITE.png" alt="GT-SUITE Certificate">
-      </div>
+      <ul class="certification-list">
+        <li class="certification-item">
+          <h4>Driveline Dynamics in xEVs</h4>
+          <ul>
+            <li>Completed: April 2025</li>
+            <li>Covered advanced driveline concepts for electric and hybrid vehicles</li>
+          </ul>
+          <img src="Driveline dynamics in xEVs.png" alt="Driveline Dynamics Certificate">
+        </li>
+        
+        <li class="certification-item">
+          <h4>Introduction to GT-SUITE</h4>
+          <ul>
+            <li>Completed: March 2025</li>
+            <li>Mastered fundamentals of GT-SUITE simulation software</li>
+            <li>Applied to powertrain modeling and analysis</li>
+          </ul>
+          <img src="Introduction to GT SUITE.png" alt="GT-SUITE Certificate">
+        </li>
+      </ul>
 
       <div class="contact-section">
-  <h4>📬 Let’s Connect</h4>
-  <p>Looking for collaboration or roles in energy systems, automation, or sustainability projects. I’m always open to talk!</p>
-  <a href="mailto:aali78@iit.edu" class="button">📧 Email Me</a>
-</div>
+        <h4>📬 Let's Connect</h4>
+        <p>Looking for collaboration or roles in energy systems, automation, or sustainability projects. I'm always open to talk!</p>
+        <a href="mailto:aali78@iit.edu" class="button">📧 Email Me</a>
+      </div>
     </div>
   </div>
 
